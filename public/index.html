@@ -18,7 +18,7 @@
 
           let options = {
             client_id:'bf82d3a97e326e326c91',
-            redirect_uri: 'http://127.0.0.1:3000/oauth',
+            redirect_uri: 'http://127.0.0.1:3000/oauth/',
             scope: 'read:user user:email',
           };
 
@@ -28,7 +28,6 @@
 
 
           let authURL = `${githubURL}?${QueryString}`;
-          console.log(authURL);
 
           $('#oauth').append(`<a href="${authURL}">Login with GitHub</a>`);
 
