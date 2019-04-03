@@ -2,7 +2,6 @@
 
 const express = require('express');
 const app = express();
-const PORT = 8080;
 
 app.use('*', (req, res, next) => {
   console.log('code:', req.query.code);
@@ -10,6 +9,6 @@ app.use('*', (req, res, next) => {
 });
 app.use(express.static('./public'));
 
-app.listen(PORT, () => {
-  console.log('Web Server up on port', PORT);
+app.listen(process.env.PORT, () => {
+  console.log('Web Server up on port', process.env.PORT);
 });
