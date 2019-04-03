@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "lint": "eslint **/*.js",
+    "lint": "eslint '**/*.js'",
     "test": "jest --verbose --coverage",
     "test-watch": "jest --watchAll --verbose --coverage",
     "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
@@ -15,5 +15,9 @@
   "dependencies": {
     "express": "^4.16.3",
     "superagent": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.6.0"
   }
 }
