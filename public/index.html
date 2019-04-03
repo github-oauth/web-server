@@ -12,23 +12,21 @@
         </main>
 
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
         <script>
 
-          let githubURL = "https://github.com/login/oauth/authorize";
+          const githubURL = "https://github.com/login/oauth/authorize";
 
-          let options = {
+          const options = {
             client_id:'bf82d3a97e326e326c91',
             redirect_uri: 'https://vast-headland-97498.herokuapp.com/oauth',
             scope: 'read:user,user:email',
           };
 
-          let QueryString = Object.keys(options).map( (key,i) => {
+          const QueryString = Object.keys(options).map( (key,i) => {
             return `${key}=` + encodeURIComponent(options[key]);
           }).join("&");
 
-
-          let authURL = `${githubURL}?${QueryString}`;
+          const authURL = `${githubURL}?${QueryString}`;
 
           $('#oauth').append(`<div><a href="${authURL}">Login with GitHub</a></div>`);
 

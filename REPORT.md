@@ -8,7 +8,7 @@
 ### Overall Score and Comments
 #### Score (Out of 10): 6
 #### General Comments
-GitHub oAuth can be used in full stack applications but is generally restricted to access developer community resources. When it is able to be implemented it can provide access to a wide range of information from within the users github account depending on the users privacy settings. 
+GitHub oAuth can be used in full stack applications but is generally restricted to access developer community resources. When it is able to be implemented it can provide access to a wide range of information from within the users github account depending on the users privacy settings.
 
 #### Pros
 * Can be setup to provide access to complete read/write/edit/delete access to github repositories, user data, and notifications
@@ -55,11 +55,15 @@ Github has 28 million users compared to the 4.4 billion world internet users (0.
 
 ### Operating Instructions
 * Download both repositories (above)
-* Install dependencies `npm i`
-* Start Mongo Server
-  * `mongod`
-* Start Node Server
-  * `nodemon` 
+* Install dependencies `npm i` for both repositories
+* `auth-server`
+  * Start Mongo Server in `auth-server`
+    * E.g., `mongod --dbpath=./data --port 27017`
+  * Start Node Server
+    * `npm run start` or `npm run watch`
+* `web-server`
+  * Start Node Server
+    * `npm run start` or `npm run watch`
 * Front End URL
   * http://localhost:8080
 * Back End URL
