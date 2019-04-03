@@ -61,6 +61,12 @@ Github has 28 million users compared to the 4.4 billion world internet users (0.
     * E.g., `mongod --dbpath=./data --port 27017`
   * Start Node Server
     * `npm run start` or `npm run watch`
+  * Set your environment variables
+    * `MONGODB_URI`
+    * `PORT`
+    * `SECRET`
+    * `GITHUB_CLIENT_ID`
+    * `GITHUB_SECRET`
 * `web-server`
   * Start Node Server
     * `npm run start` or `npm run watch`
