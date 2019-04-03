@@ -8,7 +8,7 @@
 ### Overall Score and Comments
 #### Score (Out of 10): 6
 #### General Comments
-GitHub oAuth can be used in full stack applications but is generally restricted to access developer community resources. When it is able to be implemented it can provide access to a wide range of information from within the users github account depending on the users privacy settings.
+GitHub oAuth can be used in full stack applications but is generally restricted to access developer community resources. When it is able to be implemented it can provide access to a wide range of information from within the users github account depending on the users privacy settings. 
 
 #### Pros
 * Can be setup to provide access to complete read/write/edit/delete access to github repositories, user data, and notifications
@@ -22,10 +22,11 @@ GitHub oAuth can be used in full stack applications but is generally restricted 
 * Average documentation
 * User determined privacy settings limit the information that is able to be accessed
   * Example: Email can be hidden
+* Fragile callback URLs
 
 ### Ratings and Reviews
 #### Documentation
-Documentation is missing code examples and accessing much of the supporting information requires clicking a link embedded within the text rather than having a clear table of contents. Does not clearly explain how to use the provided access URLs. Written BY experienced developers FOR experienced developers.
+Documentation is missing code examples and accessing much of the supporting information requires clicking a link embedded within the text rather than having a clear table of contents. Does not clearly explain how to use the provided access URLs. Written BY experienced developers FOR experienced developers. Documentation does not make clear that application will break if a trailing '/' is not included in the authorization callback URLs
 
 #### Systems Requirements
 GitHub oAuth does not require any specific dependencies and can connect to AWS and Heroku. It does not require a specific database.
@@ -47,8 +48,8 @@ Github has 28 million users compared to the 4.4 billion world internet users (0.
 
 
 ### Code Demos
-* [Web-Server](heroku link)
-* [Auth-Server](heroku link)
+* [Web-Server](https://fast-bayou-29731.herokuapp.com/)
+* [Auth-Server](https://vast-headland-97498.herokuapp.com/)
 * [Web-Server Repo](https://github.com/github-oauth/web-server)
 * [Auth-Server Repo](https://github.com/github-oauth/auth-server)
 
