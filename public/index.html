@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Auth Test</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
     </head>
     <body>
         <main>
@@ -29,7 +30,7 @@
 
           let authURL = `${githubURL}?${QueryString}`;
 
-          $('#oauth').append(`<a href="${authURL}">Login with GitHub</a>`);
+          $('#oauth').append(`<div><a href="${authURL}">Login with GitHub</a></div>`);
 
         </script>
     </body>
